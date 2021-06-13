@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/calender_style.css"/>
+    <link rel="stylesheet" href="./css/main_style.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/utilities.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./images/logo_calender.png" alt="Calender Logo"> 
+            <h1>Calender</h1>
+        </div>
+    </div>
+    <main id="app"> 
+
+
+        
+        <div class="side_bar">
+            <div class="cover">
+                <div class="date_calender">
+                    <div class="months_detail">
+                        <span id="month_year">May <span>2021</span></span>
+                        <div class="month_arrow">
+                            <button class="front_back_button" id="month_back_button"><</button>
+                            <button class="front_back_button" id="month_front_button">></button>
+                        </div>
+
+                    </div>
+                    <div class="days">
+                        <span data-text="Monday"> M </span>
+                        <span> T </span>
+                        <span> W </span>
+                        <span> T </span>
+                        <span> F </span>
+                        <span> S </span>
+                        <span> S </span>
+                    </div>
+
+                    <div class="dates">
+
+                        <div class="date">
+                            <div class="date_day"><span class="day"> 1 </span></div>
+                            <div class="date_day"><span class="day"> 2 </span></div>
+                            <div class="date_day"><span class="day"> 3 </span></div>
+                            <div class="date_day"><span class="day"> 4 </span></div>
+                            <div class="date_day"><span class="day"> 5 </span></div>
+                            <div class="date_day"><span class="day"> 6 </span></div>
+                            <div class="date_day"><span class="day"> 7 </span></div>
+                        </div>
+
+                        
+                        <div class="date">
+                            <div class="date_day"><span class="day"> 8 </span></div>
+                            <div class="date_day"><span class="day"> 9 </span></div>
+                            <div class="date_day"><span class="day"> 10 </span></div>
+                            <div class="date_day"><span class="day"> 11 </span></div>
+                            <div class="date_day"><span class="day"> 12 </span></div>
+                            <div class="date_day"><span class="day"> 13 </span></div>
+                            <div class="date_day"><span class="day"> 14 </span></div>
+                        </div>
+                        <div class="date">
+                            <div class="date_day"><span class="day"> 15 </span></div>
+                            <div class="date_day"><span class="day"> 16 </span></div>
+                            <div class="date_day"><span class="day"> 17 </span></div>
+                            <div class="date_day"><span class="day"> 18 </span></div>
+                            <div class="date_day"><span class="day"> 19 </span></div>
+                            <div class="date_day"><span class="day"> 20 </span></div>
+                            <div class="date_day"><span class="day"> 21 </span></div>
+                        </div>
+                    
+                        <div class="date">
+                            <div class="date_day"><span class="day"> 22 </span></div>
+                            <div class="date_day"><span class="day"> 23 </span></div>
+                            <div class="date_day"><span class="day"> 24 </span></div>
+                            <div class="date_day"><span class="day"> 25 </span></div>
+                            <div class="date_day"><span class="day"> 26 </span></div>
+                            <div class="date_day"><span class="day"> 27 </span></div>
+                            <div class="date_day"><span class="day"> 28 </span></div>
+                        </div>
+                        <div class="date">
+                            <div class="date_day"><span class="day"> 29 </span></div>
+                            <div class="date_day"><span class="day"> 30 </span></div>
+                            <div class="date_day"><span class="day"> 31 </span></div>
+                            <div class="date_day"><span class="day"> 1 </span></div>
+                            <div class="date_day"><span class="day"> 2 </span></div>
+                            <div class="date_day"><span class="day"> 3 </span></div>
+                            <div class="date_day"><span class="day"> 4 </span></div>
+                        </div>
+                    
+                        <div class="date">
+                            <div class="date_day"><span class="day"> 5 </span></div>
+                            <div class="date_day"><span class="day"> 6 </span></div>
+                            <div class="date_day"><span class="day"> 7 </span></div>
+                            <div class="date_day"><span class="day"> 8 </span></div>
+                            <div class="date_day"><span class="day"> 9 </span></div>
+                            <div class="date_day"><span class="day"> 10 </span></div>
+                            <div class="date_day"><span class="day"> 11 </span></div>
+                        </div>
+                        <div class="date">
+                            <div class="date_day"><span class="day"> 5 </span></div>
+                            <div class="date_day"><span class="day"> 6 </span></div>
+                            <div class="date_day"><span class="day"> 7 </span></div>
+                            <div class="date_day"><span class="day"> 8 </span></div>
+                            <div class="date_day"><span class="day"> 9 </span></div>
+                            <div class="date_day"><span class="day"> 10 </span></div>
+                            <div class="date_day"><span class="day"> 11 </span></div>
+                        </div>
+                    
+                    
+                
+
+                    
+                    </div>
+                </div>   
+
+            </div>
+
+        </div>
+        <div class="main_page">
+            <div style="width: 100%;">    
+                <div id="event_detail_page"></div>
+                <div class="c_day_row">
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                </div>
+
+                <div class="c_day_row">
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                </div>
+
+                <div class="c_day_row">
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                </div>
+
+                <div class="c_day_row">
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box">1</p></div>
+                </div>
+                <div class="c_day_row">
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box"></p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box"></p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box"></p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box"></p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box"></p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box"></p></div>
+                    <div class="c_day"><div class="c_day_more">More</div><button class="c_day_more_x">X</button><p id="day_box"></p></div>
+                </div>
+            </div>
+            
+
+            
+            <!-- <div class="right_bar"></div>  -->
+
+            <div class="bottom_bar">
+                <textarea id="eventName" type="text" placeholder="Enter Event"></textarea>
+                <textarea id="eventTime" type="text" placeholder="Select Time: Type 9 21 meaning 09:00 AM - 21:00 PM"></textarea>
+            </div>
+
+
+
+            <div class="event_detail" style="position:relative;">
+                <div id="event_title_header">
+                    <p id="event_title">Title</p>
+                </div>
+                <div id="event_title_header">
+                    <p id="event_title">Date</p>
+                </div>
+                <div id="event_title_header">
+                    <p id="event_title">Description</p>
+                </div>
+
+
+            </div>
+      
+        </div>
+
+    </div>              
+
+
+
+
+    <script src="./app_code.js"></script>
+
+    </main>
+
+
+
+</body>
+</html>

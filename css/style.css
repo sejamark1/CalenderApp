@@ -1,0 +1,51 @@
+* { 
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;  
+  font-family: Roboto,Helvetica,Arial,sans-serif;
+  transition: 100ms;
+
+}
+
+#app{ 
+    position: relative; 
+    height: 100vh; 
+    width: 100vw;  
+    background:red;
+    display: flex;
+
+}
+
+.header{ 
+    position: relative;
+    height: 50px;
+    background: white;
+    border-bottom: 2px solid #acacac;
+}
+
+.logo{ 
+    position: absolute; 
+    display: flex;
+    user-select: none;
+    left: 10px;
+    color: #5e5e5e;
+}
+.logo > img{ 
+    height: 35px;
+    margin-top: 10px;
+
+}
+
+.logo > h1 {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.side_bar{ 
+    position: relative;
+    background: white;
+    height: 100%;
+    width: 300px;
+    display: inline-table;
+    
+}

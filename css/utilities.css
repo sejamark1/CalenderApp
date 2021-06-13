@@ -1,0 +1,8 @@
+@keyframes warning_box{ 
+    from{border: 1px solid black}
+    to{border: 1px solid red}
+}
+.warning_box{ 
+    animation-name: warning_box;
+    animation-duration: 1s;
+}
